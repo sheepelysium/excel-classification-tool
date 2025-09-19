@@ -350,7 +350,7 @@
             <div class="download-section">
                 <h3>💾 下載分類結果</h3>
                 <button class="btn" id="downloadBtn">下載Excel檔案</button>
-                <button class="btn" id="downloadCsvBtn">下載CSV檔案</button>
+                <!-- <button class="btn" id="downloadCsvBtn">下載CSV檔案</button> -->
             </div>
         </div>
     </div>
@@ -363,7 +363,7 @@
             "標準斷面": ["斷面圖", "剖面圖", "橫斷面", "標準斷面", "section", "橫段面", "橫断面"], // 保留原有+新增橫斷面變體
             "縱面圖": ["縱面圖", "縱坡圖", "縱斷面圖", "profile"], // 【新增】從標準斷面分離出來
             "立面圖": ["立面圖", "正面圖", "側面圖", "elevation"],
-            "詳圖": ["詳圖", "大樣圖", "節點圖", "構造詳圖", "detail", "祥圖"], // 新增"祥圖"
+            "詳圖": ["詳圖", "大樣圖", "節點圖", "構造詳圖", "detail", "祥圖","詳細圖"], // 新增"祥圖"
             "竣工圖": ["竣工圖", "完工圖", "as-built"],
             "施工圖": ["施工圖", "施工說明", "construction"],
             "示意圖": ["示意圖", "展開圖", "控制圖", "指示圖", "示意", "佈設圖"], // 新增變體
@@ -403,7 +403,7 @@
             "照明設備": ["照明", "路燈", "LED", "燈箱", "燈座", "行人燈"], // 【新增】細分
             "消防設備": ["消防", "警報", "消防栓", "消防設備", "昇位圖"], // 【新增】細分
             "機電設備": ["機電", "電氣", "控制器", "接線箱", "配件", "空調", "通風"], // 【保留】其他機電
-            "排水機電": ["抽水", "泵浦", "機械", "電機"], // 【保留】原有
+            "排水機電": ["抽水", "泵浦"], // 【保留】原有
             
             // === 原有測量規劃（保留） ===
             "測量控制": ["導線網", "水準網", "控制點", "樁位", "測量", "控制網"],
@@ -732,9 +732,9 @@
                 downloadExcel();
             };
             
-            document.getElementById('downloadCsvBtn').onclick = function() {
-                downloadCSV();
-            };
+            //document.getElementById('downloadCsvBtn').onclick = function() {
+                //downloadCSV();
+            //};
         }
         
         // 下載Excel檔案
